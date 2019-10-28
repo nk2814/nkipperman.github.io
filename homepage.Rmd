@@ -4,10 +4,9 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
 ### Homepage for Naama Kipperman's (nk2814) Data Science Homework 4
 
-You can learn more about my academic and professional experiences [here](aboutme.html).
+Welcome to my personal website! You can learn more about my academic and professional experiences [here](aboutme.html).
 
