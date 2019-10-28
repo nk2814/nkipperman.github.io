@@ -7,4 +7,80 @@ output:
     theme: cerulean
 ---
 
+My name is Naama Kipperman and I'm a current second year MPH student at Columbia's Mailman School of Public Health in the Department of Epidemiology. I hope to leverage my skills and enthusiasm for public health toward making meaningful improvements in infectious disease surveillance. 
+
+#### **Education**
+
+**Mailman School of Public Health, Columbia University** | New York, NY
+
+*Master of Public Health (MPH)*, Epidemiology, expected May 2020
+
+Applied Biostatistics Certificate
+
+GPA: 4.0
+
+**Bucknell University** | Lewisburg, PA
+
+*Bachelor of Arts (BA)*, Biology, May 2017
+
+Minors in Statistics and Sociology
+
+GPA: 3.91 - Summa cum Laude
+
+-Phi Beta Kappa, Phi Sigma Biological Sciences Honors Society, Dean’s Scholarship Recipient
+
+#### **Experience**
+
+**Bureau of Communicable Diseases | New York City Department Of Health & Mental Hygiene**
+
+*Disease Control Intern* | Queens, NY  (May 2019 - present)
+	
+•	Conduct infectious disease surveillance for foodborne pathogens in New York City via structured interviews with patients and providers
+
+•	Investigate local and multistate clusters of enteric diseases through analysis of patient exposure histories and prepare summary reports to be shared at bureau-wide meetings and with CDC 
+
+•	Serve as co-investigator on acute outbreak events and assist principal epidemiologists in assessing etiology and magnitude of outbreaks 
+
+•	Perform data cleaning with SAS and manage enteric disease databases in Access 
+
+
+**Department of Biostatistics | Columbia University**
+
+*Graduate Teaching Assistant* | New York, NY (September 2019-present)
+
+•	Hold weekly office hours and grade homework assignments, exams, and projects for core biostatistics graduate course ‘Applied Regression I’
+
+•	Assist instructor in developing course materials and facilitate weekly in-class group discussions of scientific research articles 
+
+
+**Heilbrunn Department of Population and Family Health | Columbia University**
+
+*Graduate Teaching Assistant*  | New York, NY   (January 2019-May 2019)
+
+•	Identify readings and other course materials through comprehensive literature searches for graduate course ‘Communicable Diseases in Complex Emergencies’
+
+•	Plan course logistics, manage class website, and prepare presentations and handouts for weekly lectures
+
+
+**Department of Epidemiology & Population Health | Albert Einstein College of Medicine**
+
+*Research Assistant* | Bronx, NY (June 2016-July 2016)
+
+
+• Conducted epidemiological study using nationally-representative National Health and Nutrition Examination Survey (NHANES) cross-sectional data and performed multivariate statistical analyses with Stata
+
+• Assisted principal investigator in writing manuscript on health literacy and health outcomes among adults in the Bronx, NY
+
+#### **Certifications/Skills**
+• Microsoft Office, SAS, R, SQL, QGIS
+
+• Advanced-proficient in Spanish
+
+• HIPAA and CITI (human subjects research) certified
+
+#### **Publications**
+
+• Lee, J.A., Abramowitz, M.K., Kipperman, N., Drzewiecki, B.A., Melamed, M.L. and Stern, J.M., 2018. Exploring the Association of Asthma with Urinary Stone Disease: Results from the National Health and Nutrition Examination Survey 2007–2014. *European urology focus*.
+
+
 
