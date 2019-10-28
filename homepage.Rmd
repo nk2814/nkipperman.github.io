@@ -9,5 +9,5 @@ output:
 
 ### Homepage for Naama Kipperman's (nk2814) Data Science Homework 4
 
-You can learn more about my academic and professional experiences [here](about.html).
+You can learn more about my academic and professional experiences [here](aboutme.html).
 
