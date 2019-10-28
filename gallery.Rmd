@@ -1,0 +1,29 @@
+---
+title: "A Day in the Life"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+#### Here are some pictures of a hike I went on this fall!
+
+![](photos/friends.jpg)
+Storm King Mountain, Hudson Valley NY October 2019
+
+Photo Credit: Zachary Kahn
+
+![](photos/storm king.jpg)
+Storm King Mountain, Hudson Valley NY October 2019
+
+Photo Credit: Zachary Kahn
+
+![](photos/storm king 2.jpg)
+Storm King Mountain, Hudson Valley NY October 2019
+
+Photo Credit: Zachary Kahn
+
+![](photos/me.jpg)
+Storm King Mountain, Hudson Valley NY October 2019
+
+Photo Credit: Zachary Kahn
