@@ -7,6 +7,8 @@ navbar:
       href: aboutme.html
     - text: "LinkedIn"
       href: https://www.linkedin.com/in/naama-kipperman-aa3239127/
+    - text: "Gallery"
+      href: gallery.html
     - icon: fa-envelope fa-lg
       href: mailto:<nk2814@cumc.columbia.edu>
     - icon: fa-github fa-lg

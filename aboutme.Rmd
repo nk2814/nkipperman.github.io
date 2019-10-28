@@ -8,7 +8,7 @@ output:
 
 My name is Naama Kipperman and I'm a current second year MPH student at Columbia's Mailman School of Public Health in the Department of Epidemiology. I hope to leverage my skills and enthusiasm for public health toward making meaningful improvements in infectious disease surveillance. 
 
-#### **Education**
+## **Education**
 
 **Mailman School of Public Health, Columbia University** | New York, NY
 
@@ -28,7 +28,7 @@ GPA: 3.91 - Summa cum Laude
 
 -Phi Beta Kappa, Phi Sigma Biological Sciences Honors Society, Dean’s Scholarship Recipient
 
-#### **Experience**
+## **Experience**
 
 **Bureau of Communicable Diseases | New York City Department Of Health & Mental Hygiene**
 
@@ -70,14 +70,14 @@ GPA: 3.91 - Summa cum Laude
 
 • Assisted principal investigator in writing manuscript on health literacy and health outcomes among adults in the Bronx, NY
 
-#### **Certifications/Skills**
+## **Certifications/Skills**
 • Microsoft Office, SAS, R, SQL, QGIS
 
 • Advanced-proficient in Spanish
 
 • HIPAA and CITI (human subjects research) certified
 
-#### **Publications**
+## **Publications**
 
 • Lee, J.A., Abramowitz, M.K., Kipperman, N., Drzewiecki, B.A., Melamed, M.L. and Stern, J.M., 2018. Exploring the Association of Asthma with Urinary Stone Disease: Results from the National Health and Nutrition Examination Survey 2007–2014. *European urology focus*.
 
