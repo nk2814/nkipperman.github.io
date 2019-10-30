@@ -12,23 +12,10 @@ library(tidyverse)
 library(viridis)
 library(p8105.datasets)
 library(plotly)
+library(sqldf)
+library(rvest)
 ```
 
-```{r}
-data("nyc_airbnb")
-set.seed(1)
-nyc_airbnb = 
-  nyc_airbnb %>% 
-  mutate(rating = review_scores_location / 2) %>%
-  select(
-    neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) %>%
-  filter(
-    !is.na(rating), 
-    neighbourhood_group == "Manhattan",
-    room_type == "Entire home/apt",
-    price %in% 100:500)  %>% 
-  sample_n(5000)
-```
 
 
 Column {data-width=650}
@@ -37,9 +24,18 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-nyc_airbnb %>% 
-  plot_ly(x = ~lat, y = ~long, type = "scatter", mode = "markers",
-          color = ~price, alpha = 0.5)
+
+data("rest_inspec") 
+
+plot1=
+  rest_inspec %>% 
+  drop_na() %>% 
+  filter(grade %in% c("A", "B", "C", "Z", "P"),
+         boro %in% c("BRONX", "BROOKLYN", "MANHATTAN", "STATEN ISLAND", "QUEENS")) %>% 
+    ggplot(aes(x=boro))+geom_bar(aes(fill=grade))+labs(title="Number of Restaurant Inspections by Borough", x="borough", y="number of inspections")
+
+ggplotly(plot1)
+
 ```
 
 Column {data-width=350}
@@ -48,18 +44,19 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-nyc_airbnb %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
-  plot_ly(y = ~price, color = ~neighbourhood, type = "box",
-          colors = "Set2")
+data("rest_inspec") 
+
+plot2=
+  rest_inspec %>% 
+  drop_na() %>% 
+  separate(inspection_date, into=c("year", "month", "day"), sep="-")
 ```
 
 ### Chart C
 
 ```{r}
-nyc_airbnb %>% 
-  count(neighbourhood) %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
-  plot_ly(x = ~neighbourhood, y = ~n, type = "bar")
+data("rest_inspec") 
+
+
 ```
 
