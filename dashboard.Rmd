@@ -14,6 +14,7 @@ library(p8105.datasets)
 library(plotly)
 library(sqldf)
 library(rvest)
+library(lubridate)
 ```
 
 
@@ -44,12 +45,10 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-data("rest_inspec") 
 
-plot2=
-  rest_inspec %>% 
-  drop_na() %>% 
-  separate(inspection_date, into=c("year", "month", "day"), sep="-")
+ 
+  
+
 ```
 
 ### Chart C
@@ -58,5 +57,35 @@ plot2=
 data("rest_inspec") 
 
 
+  rest_inspec %>% 
+  drop_na() %>% 
+  mutate(
+    date=as_date(grade_date)
+  ) %>% 
+  mutate(
+    year=lubridate::year(grade_date),
+    month=lubridate::month(grade_date),
+    day=lubridate::day(grade_date)
+  ) %>% 
+  mutate(
+    month = as_factor(month),
+    year = as_factor(year)
+  ) %>% 
+  mutate(
+    month = recode(month, `1`="January", `2`="February", `3`="March", `4`="April", `5`="May", `6`="June", `7`="July", `8`="August", `9`="September", `10`="October", `11`="November", `12`="December")
+  ) %>% 
+  group_by(month, year, violation_description) %>% 
+  summarize(n=n()) %>% 
+  mutate(
+    percent = (n/sum(n))*100
+  ) %>% 
+    filter(str_detect(violation_description, "flies")) %>% 
+    ungroup() %>% 
+    plot_ly(x=~month, y=~percent, group=~year, type="scatter", color=~year, mode="lines+markers") 
+
+
+
 ```
+
+   ggplot(aes(x=month, y=percent, color=year))+geom_line(aes(group=year))+geom_point() +theme(axis.text.x = element_text(angle = 90))
 
