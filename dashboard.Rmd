@@ -25,35 +25,6 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-
-data("rest_inspec") 
-
-plot1=
-  rest_inspec %>% 
-  drop_na() %>% 
-  filter(grade %in% c("A", "B", "C", "Z", "P"),
-         boro %in% c("BRONX", "BROOKLYN", "MANHATTAN", "STATEN ISLAND", "QUEENS")) %>% 
-    ggplot(aes(x=boro))+geom_bar(aes(fill=grade))+labs(title="Number of Restaurant Inspections by Borough", x="borough", y="number of inspections")
-
-ggplotly(plot1)
-
-```
-
-Column {data-width=350}
------------------------------------------------------------------------
-
-### Chart B
-
-```{r}
-
- 
-  
-
-```
-
-### Chart C
-
-```{r}
 data("rest_inspec") 
 
 
@@ -81,11 +52,46 @@ data("rest_inspec")
   ) %>% 
     filter(str_detect(violation_description, "flies")) %>% 
     ungroup() %>% 
-    plot_ly(x=~month, y=~percent, group=~year, type="scatter", color=~year, mode="lines+markers") 
-
+    plot_ly(x=~month, y=~percent, group=~year, type="scatter", color=~year, mode="lines+markers") %>% 
+    layout(title="Percentage (%) of Violations Due to Filth Flies or Food/Refuse/Sewage-Associated Flies")
 
 
 ```
 
-   ggplot(aes(x=month, y=percent, color=year))+geom_line(aes(group=year))+geom_point() +theme(axis.text.x = element_text(angle = 90))
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+data("rest_inspec") 
+
+
+  rest_inspec %>% 
+  drop_na() %>% 
+    filter(grade=="A",
+         boro %in% c("BRONX", "BROOKLYN", "MANHATTAN", "STATEN ISLAND", "QUEENS")) %>% 
+  plot_ly(y = ~score, color = ~boro, type = "box",
+          colors = "Set2")
+
+```
+
+### Chart C
+
+```{r}
+data("rest_inspec") 
+
+plot1=
+  rest_inspec %>% 
+  drop_na() %>% 
+  filter(grade %in% c("A", "B", "C", "Z", "P"),
+         boro %in% c("BRONX", "BROOKLYN", "MANHATTAN", "STATEN ISLAND", "QUEENS")) %>% 
+    ggplot(aes(x=boro))+geom_bar(aes(fill=grade))+labs(title="Number of Restaurant Inspections by Borough", x="borough", y="number of inspections")
+
+ggplotly(plot1)
+
+
+```
+
 
