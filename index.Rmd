@@ -1,14 +1,19 @@
 ---
-title: "Naama Kipperman | nk2814"
+title: "Naama Kipperman"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-### Welcome to my website!
+
+My name is Naama Kipperman, and I'm a second year Master of Public Health candidate in the Department of Epidemiology at Columbia University's Mailman School of Public Health. 
 
 You can learn more about my academic and professional experiences [here](aboutme.html).
 
-If you want to see what kinds of shenanigans I get up to when I'm not doing data science, you can see my [personal gallery here](gallery.html)
+If you want to see what kinds of shenanigans I get up to when I'm not doing data science, you can see my [personal gallery here](gallery.html).
+
+
+
+
 

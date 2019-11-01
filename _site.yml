@@ -17,4 +17,4 @@ navbar:
       href: https://github.com/nk2814/nkipperman.github.io
 output:
   html_document:
-    theme: united
+    theme: paper

@@ -6,7 +6,6 @@ output:
     toc_float: true
 ---
 
-#### Here are some pictures of a hike I went on this fall!
 
 ![](photos/friends.jpg)
 Storm King Mountain, Hudson Valley NY October 2019

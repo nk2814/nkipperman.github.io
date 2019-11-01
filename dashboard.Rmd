@@ -73,7 +73,8 @@ data("rest_inspec")
     filter(grade=="A",
          boro %in% c("BRONX", "BROOKLYN", "MANHATTAN", "STATEN ISLAND", "QUEENS")) %>% 
   plot_ly(y = ~score, color = ~boro, type = "box",
-          colors = "Set2")
+          colors = "Set2")%>% 
+    layout(title="Distribution of Inspection Scores by Borough")
 
 ```
 
