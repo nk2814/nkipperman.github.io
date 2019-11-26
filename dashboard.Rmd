@@ -1,5 +1,5 @@
 ---
-title: "Dashboard"
+title: "NYC Restaurant Inspections Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -12,7 +12,6 @@ library(tidyverse)
 library(viridis)
 library(p8105.datasets)
 library(plotly)
-library(sqldf)
 library(rvest)
 library(lubridate)
 ```
@@ -53,7 +52,7 @@ data("rest_inspec")
     filter(str_detect(violation_description, "flies")) %>% 
     ungroup() %>% 
     plot_ly(x=~month, y=~percent, group=~year, type="scatter", color=~year, mode="lines+markers") %>% 
-    layout(title="Percentage (%) of Violations Due to Filth Flies or Food/Refuse/Sewage-Associated Flies")
+    layout(title="Percentage (%) of Total Monthly Violations Due to Filth Flies or Food/Refuse/Sewage-Associated Flies")
 
 
 ```

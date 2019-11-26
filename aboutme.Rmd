@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-My name is Naama Kipperman and I'm a current second year MPH student at Columbia's Mailman School of Public Health in the Department of Epidemiology. I hope to leverage my skills and enthusiasm for public health toward making meaningful improvements in infectious disease surveillance. 
+I'm a current second year MPH student at Columbia's Mailman School of Public Health in the Department of Epidemiology. I hope to leverage my skills and enthusiasm for public health toward making meaningful improvements in infectious disease surveillance. 
 
 ## **Education**
 

@@ -1,5 +1,5 @@
 ---
-title: "Naama Kipperman"
+title: "Naama Kipperman's Website"
 output: 
   html_document:
     toc: true
@@ -7,7 +7,7 @@ output:
 ---
 
 
-My name is Naama Kipperman, and I'm a second year Master of Public Health candidate in the Department of Epidemiology at Columbia University's Mailman School of Public Health. 
+My name is Naama Kipperman, and I'm a second year Master of Public Health candidate in the Department of Epidemiology at Columbia University's Mailman School of Public Health.  
 
 You can learn more about my academic and professional experiences [here](aboutme.html).
 
